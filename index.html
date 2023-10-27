@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Exchange</title>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Currency Converter</h1>
+
+  <form>
+    <div class="amount">
+      <label for="amount">Amount to Convert:</label><br>
+      <input required autofocus autocomplete="off" type="number" id="amount" min="0" placeholder="0.00">
+    </div>
+
+    <div class="currency-selectors">
+      <div>
+        <label for="from">From</label>
+        <select name="from" id="from">
+        </select>
+      </div>
+      <div>
+        <label for="to">To</label>
+        <select name="to" id="to">
+        </select>
+      </div>
+    </div>
+    <div class="btn-group">
+      <button type="submit">Convert</button>
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+  <div class="result">
+    <h2></h2>
+    <p>Last updated: <span></span></p>
+  </div>
+</body>
+
+</html>
