@@ -34,7 +34,7 @@ function main() {
     let data = await response.json();
     const rate = data.conversion_rates[to];
     const result = amount * rate;
-    document.querySelector('.result>h2').innerHTML = `${amount} <a href="${googleSearch(from)}">${from}</a> = ${result.toFixed(4)} <a href="${googleSearch(to)}">${to}</a>`;
+    document.querySelector('.result>h2').innerHTML = `${amount} <a target="_blank" href="${googleSearch(from)}">${from}</a> = ${result.toFixed(4)} <a target="_blank" href="${googleSearch(to)}">${to}</a>`;
   }
 
   form.addEventListener('submit', function (e) {
